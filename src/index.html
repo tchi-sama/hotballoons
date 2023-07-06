@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        scroll-behavior: smooth;
+    }
+
+    .hero{
+        background-image: url(./assets/sky.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .hero2img{
+        background-image: url(./assets/balllonsimg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .animateballoon{
+        animation: balloon 5s infinite ease-in-out;
+    }
+    @keyframes balloon {
+        0%{
+            transform: translateY(-55%);
+        }
+        50%{
+            transform: translateY(-59%);
+        }
+        100%{
+            transform: translateY(-55%);
+        }
+    }
+    .animateballoon2{
+        animation: balloon2 9s infinite ease-in-out;
+    }
+    @keyframes balloon2 {
+        0%{
+            transform: translateY(-0%);
+        }
+        50%{
+            transform: translateY(-3%);
+        }
+        100%{
+            transform: translateY(-0%);
+        }
+    }
+
+</style>
+<body>
+    <nav class="absolute top-0 left-0 w-full z-30 p-8">
+        <img src="./assets/logo.png" class=" w-[200px]">
+    </nav>
+    <section class="hero h-screen w-full flex relative justify-center items-center pt-32">
+        <img src="./assets/balloon2.png" class="absolute animateballoon2 z-0 top-[50%] left-[20%] w-[15vw]" alt="">
+        <div class="flex flex-col gap-4 items-center ">
+            <h1 class="text-white text-[8vw] drop-shadow-xl font-bold z-10 uppercase text-center">
+                Hot air balloon<br>marrakech
+            </h1>
+            <a href="#booknow" class="bg-[#565260] p-4 px-6 text-lg rounded-lg text-white uppercase ">book now</a>
+        </div>
+        <img src="./assets/balloon1.png" class="absolute animateballoon  drop-shadow-xl z-20 translate-y-[-48%] right-[20%] w-[22vw]" alt="">
+    </section>
+    <section id="booknow" class="min-h-screen w-full flex flex-col-reverse lg:flex-row">
+        <div class="flex-1 flex flex-col p-10 justify-center ">
+            <h1 class="text-3xl font-bold uppercase">Hot air balloon marrakechk</h1>
+            <p class="py-8 text-lg font-medium">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde laborum praesentium, deserunt qui placeat labore ullam ex! Natus cum dolores aliquid illum dolorem eum optio sit tempore amet. Autem? consectetur, adipisicing elit. Ratione nostrum mollitia corporis quos id ullam debitis explicabo sapiente. Delectus eius culpa, ducimus saepe modi aliquid repellendus omnis provident fugit aperiam.</p>
+            <p class="py-8 text-lg font-medium">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde laborum praesentium, deserunt qui placeat labore ullam ex! Natus cum dolores aliquid illum dolorem eum optio sit tempore amet. Autem? consectetur, adipisicing elit. Ratione nostrum mollitia corporis quos id ullam debitis explicabo sapiente. Delectus eius culpa, ducimus saepe modi aliquid repellendus omnis provident fugit aperiam.</p>
+            <button class="bg-[#565260] p-4 px-6 text-lg rounded-lg text-white uppercase  max-w-xs">only 245$ / per person</button>
+        </div>
+        <div class="hero2img lg:flex-1 h-[400px] lg:h-screen"></div>
+    </section>
+    <footer class="p-8 gap-10 flex bg-gray-800">
+        <div class="max-w-[600px] flex-1 w-full">
+            <img src="./assets/logo.png" class=" w-[200px]">
+            <p class="text-white">You are one click away from your idea Marrakech vacation. Here in  we are experts at planning your ideal tour, take the right step and let us help you attain the perfect get away.</p>
+        </div>
+        <ul class=" flex-1 flex flex-col gap-2 p-2 justify-center text-white">
+            <li>+212 671 578 276</li>
+            <li>marrakechquadbiing@gmail.com</li>
+            <li>www.marrakech-quad-biking.com</li>
+            <li>rue beni marine n27 imm rux medina 41000 marrakech , morocco</li>
+        </ul>
+    </footer>
+</body>
+</html>
